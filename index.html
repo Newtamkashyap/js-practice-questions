@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reaction Time Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #playArea {
+      width: 400px;
+      height: 400px;
+      border: 1px solid black;
+      margin: 20px auto;
+      position: relative;
+    }
+    .pixel {
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      position: absolute;
+    }
+    table {
+      margin: 20px auto;
+      width: 50%;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Reaction Time Game</h1>
+  
+  <div>
+    <button id="startBtn">Start</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="resetBtn">Reset</button>
+    <label>Interval: 
+      <input type="number" id="intervalInput" value="1" min="1" max="10"> seconds
+    </label>
+  </div>
+
+  <div id="playArea"></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Mouse Click Number</th>
+        <th>Reaction Time</th>
+      </tr>
+    </thead>
+    <tbody id="reactionTable">
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
