@@ -1,5 +1,5 @@
 
-let score = 45;
+let score = 35;
 
 
 if (score >= 50) {
@@ -8,3 +8,4 @@ if (score >= 50) {
 else {
     console.log("You failed the examination.");
 }
+//
